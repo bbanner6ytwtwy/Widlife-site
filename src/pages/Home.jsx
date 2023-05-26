@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Nav from '../components/Nav'
 import {motion} from "framer-motion"
+import './styles.css';
 import axios from "axios"
 import {imgs, img, people} from '../../Content'
 import { Link } from 'react-router-dom'
