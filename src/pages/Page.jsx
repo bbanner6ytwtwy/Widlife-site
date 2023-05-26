@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Nav from '../components/Nav';
+import './styles.css';
 import Footer from '../components/Footer';
 import axios from 'axios';
 function Page() {
