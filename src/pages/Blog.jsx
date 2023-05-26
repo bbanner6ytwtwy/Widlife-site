@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import {useParams} from 'react-router-dom'
+import './styles.css';
 import axios from 'axios'
 function Blog() {
     const [content, setContent] = useState([]);
