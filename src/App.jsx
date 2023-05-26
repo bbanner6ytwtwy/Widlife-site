@@ -2,7 +2,7 @@ import React from 'react';
 import "./index.css"
 import Main from './pages/Main';
 import Home from './pages/Home';
-import Page from './pages/page';
+import Page from './pages/Page';
 import Category from './pages/Category';
 import Blog from './pages/Blog';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
