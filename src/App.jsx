@@ -3,7 +3,6 @@ import "./index.css"
 import Main from './pages/Main';
 import Home from './pages/Home';
 import Page from './pages/Page';
-import './styles.css';
 import Category from './pages/Category';
 import Blog from './pages/Blog';
 import {BrowserRouter, Routes, Route} from "react-router-dom"

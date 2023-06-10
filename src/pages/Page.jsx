@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Loader from '../components/Loader';
 import Nav from '../components/Nav';
-import './styles.css';
 import Footer from '../components/Footer';
 import axios from 'axios';
 function Page() {
