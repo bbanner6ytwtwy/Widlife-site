@@ -1,6 +1,7 @@
 import React from 'react'
 import Typed from 'typed.js';
 import { Link } from 'react-router-dom';
+import Loader from '../components/Loader';
 function Main() {
   const el = React.useRef(null);
 
@@ -17,6 +18,7 @@ function Main() {
 
   return (
       <>
+      <Loader />
     <div id="main" className="">
       <h1 className="text-6xl" ref={el} />
       <Link to="/home"><button className="border-4 border-white text-white text-2xl p-3 rounded-3xl hover:rounded-none">Go to Blog</button></Link>

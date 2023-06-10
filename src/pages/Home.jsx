@@ -6,6 +6,7 @@ import axios from "axios"
 import {imgs, img, people} from '../../Content'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
+import Loader from '../components/Loader';
 function Home() {
     const [content, setContent] = useState([]);
     useEffect(() => {
@@ -16,6 +17,7 @@ function Home() {
         }, []) 
     return (
         <> 
+        <Loader />
         <Nav /> 
         <div className=" pt-7 px-7 lg:flex items-center">
             <div className="lg:w-8/12 w-full">

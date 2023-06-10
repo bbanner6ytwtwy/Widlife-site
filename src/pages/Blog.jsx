@@ -6,6 +6,7 @@ import {motion} from 'framer-motion'
 import {useParams} from 'react-router-dom'
 import './styles.css';
 import axios from 'axios'
+import Loader from '../components/Loader'
 function Blog() {
     const [content, setContent] = useState([]);
     useEffect(() => {
@@ -16,6 +17,7 @@ function Blog() {
         }, []) 
     return (
         <>
+        <Loader />
         <Nav />
         <div className='w-full p-5 flex'>
         <hl className="font-serif text-5xl mx-auto">Welcome to the Jungle Blog.</hl>

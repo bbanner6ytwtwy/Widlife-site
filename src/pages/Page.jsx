@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Loader from '../components/Loader';
 import Nav from '../components/Nav';
 import './styles.css';
 import Footer from '../components/Footer';
@@ -38,6 +39,7 @@ function Page() {
         }
     return (
         <>
+       <Loader />
         <Nav />
             <div className='' >
                 

@@ -6,6 +6,7 @@ import {motion} from 'framer-motion'
 import {useParams} from 'react-router-dom'
 import './styles.css';
 import axios from 'axios'
+import Loader from '../components/Loader'
 function Category() {
     const [content, setContent] = useState([]);
     const {animal} = useParams()
@@ -17,6 +18,7 @@ function Category() {
         }, [])
     console.log(animal)
     return (<> 
+        <Loader />
         <Nav /> 
             <div className="px-7 w-full flex flex-wrap items-center">
             <div className='w-full p-5 flex'>
