@@ -20,7 +20,7 @@ function Nav() {
     return(
         <>
         <nav className="flex py-5" style={{zIndex: 100}}>
-          <Link to="/home" className="font-big inline-block w-6/12 ps-7 text-zinc-50 cursor-pointer font-serif font-bold">Akintunde</Link>
+          <Link to="/home" className="font-big inline-block w-6/12 ps-7 text-zinc-50 cursor-pointer font-serif font-bold">Wildlife</Link>
           {windowWidth < 1000?  <div className="w-6/12 my-auto">
            <div className="">
             <HamburgerMenu
@@ -35,7 +35,6 @@ function Nav() {
               animationDuration={0.5}
               className=" relative ms-auto mr-7"
             />
-            {/* Your other content */}
             {isOpen && (
                 <div className="absolute mt-4 w-4/12 text-center bgvd right-0 z-40">
                   <Link to="/home"  className="block  hover:bg-green-200 border-b-2 border-b-green-300 hover:text-stone-950 text-zinc-50">Home</Link>

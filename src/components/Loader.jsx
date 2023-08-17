@@ -16,7 +16,7 @@ function Loader() {
       
       <div>
         {isLoading ? (
-          <div className='z-50 bg-black w-screen fixed top-0 h-screen flex flex-col items-center justify-center'>
+          <div className='z-50 bg-emerald-950 w-screen fixed top-0 h-screen flex flex-col items-center justify-center'>
           <Bars
           visible={true}
           height="120"
