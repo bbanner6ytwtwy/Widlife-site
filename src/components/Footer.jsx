@@ -30,7 +30,7 @@ function Footer() {
              <p className="text-zinc-500 lg:text-base text-xs">Instagram</p>
              </div>
            </div> 
-           <div className="text-xs lg:text-base text-center text-zinc-50 bg-emerald-950 pb-5">@Copyright {year} Akintunde is growing.</div>
+           <div className="text-xs lg:text-base text-center text-zinc-50 bg-emerald-950 pb-5">@Copyright {year} Wildlife Preservation.</div>
         </>
     )
 }

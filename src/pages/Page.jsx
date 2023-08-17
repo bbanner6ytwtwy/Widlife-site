@@ -41,19 +41,19 @@ function Page() {
        <Loader />
         <Nav />
             <div className='' >
-                
-                        <div className='flex items-center text-center flex-col'>
+                        <div className='text-center'>
                         <h1 className='lg:text-5xl text-3xl lg:p-7 p-5 font-bold font-serif'>{data.title}</h1>
-                        <div className='w-9/12 items-center'>
-                        <img className='lg:w-5/12 w-full mx-auto my-2  object-cover rounded-tr-3xl rounded-bl-3xl hover:grayscale' src={data.img} alt="animal" />
+                       <div className=""> <div className='w-full lg:w-6/12 inline-block align-top'>
+                        <img className='w-8/12 mx-auto  h-5/6 my-2  object-cover rounded-tr-3xl rounded-bl-3xl hover:grayscale' src={data.img} alt="animal" />
                         </div>
-                            <div className='w-9/12 text-start'>
+                            <div className='w-full lg:w-6/12 p-6 inline-block text-start align-top'>
                             <button className="bg-emerald-900 py-1 px-3 mt-2 mb-2 hover:bg-green-500 text-zinc-50 hover:text-xinc-300"><Link to={"/forest/family/" + data.category}>{data.category}</Link></button>
                                 <p className='text-justify pb-2'>{content === false ? (data.content && data.content.slice(0, 1000)) : (data.content && data.content.slice(0,10000))}<button onClick={reset} className='bg-emerald-900 ms-3 p-2 text-zinc-50 hover:bg-green-500 hover:text-stone-950 '>Read more</button></p>
                             </div>
-                            <div className="lg:w-11/12 w-full flex items-center flex-row flex-wrap md:flex-row md:flex-wrap">
+                            </div>
+                            <div className="lg:w-11/12 w-full flex items-center flex-row flex-wrap mx-auto md:flex-row md:flex-wrap">
                             {category.map((post) => {
-                            return (<div className="xl:w-4/12 lg:w-4/12 md:w-6/12 w-6/12 lg:p-5 p-2 items-center inline-block text-start">
+                            return (<div className="lg:w-4/12 md:w-6/12 w-6/12 lg:p-5 p-2 items-center inline-block text-start">
                             <Link to={"/forest/" + post._id}><motion.img onClick={set} initial={{border: "0px solid #fff"}} whileHover={{border: "20px solid #fff"}} className='w-10/12 object-cover xl:mx-0 mx-auto rounded-tr-3xl rounded-bl-3xl hover:grayscale' src={post.img} alt="animal"/></Link>
                             <Link to={"/forest/family/" + data.category}><button className="bg-emerald-900 py-1 px-3 mt-2 hover:bg-green-500 text-zinc-50 hover:text-xinc-300">{post.category}</button></Link>
                                     <h1 className="lg:text-xl text-sm pt-3 xl:px-5 lg:px-2 md:px-0 font-bold font-serif">{post.title + "."}</h1>
