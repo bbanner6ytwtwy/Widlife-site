@@ -6,6 +6,7 @@ import Loader from '../components/Loader';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import axios from 'axios';
+import './styles.css'
 function Page() {
     const [changeData, setChangeData] = useState(true)
     const [data, setData] = useState([]);
